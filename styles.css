@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-600: 30px/36px sans-serif;
+  --header-500: 26px/30px sans-serif;
+  --header-400: 22px/25px sans-serif;
+
+  --primary-color: #FBFBFB;
+  --main-text-color: #1E1E1E;
+}
+
+.title {
+  font: var(--header-600);
+}
+
+.subtitle {
+  font: var(--header-500);
+}
+
+.small-title {
+  font: var(--header-400);
+}
+
+@media (max-width: 736px) {
+  :root {
+    --header-600: 26px/30px sans-serif;
+    --header-500: 22px/24px sans-serif;
+    --header-400: 20px/22px sans-serif;
+  }
+}
+
+.page {
+  background: var(--primary-color);
+  color: var(--main-text-color);
+}
+
+.page_theme_dark {
+  --primary-color: #0D0D0D;
+  --main-text-color: #F9F9F9;
+}
